@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://i8u846fb3e2u"]
+
+[ext_resource type="Texture2D" uid="uid://bvcn2qs6vm6wv" path="res://Lab 1, Sprite 1.png" id="1_dfn12"]
+[ext_resource type="Texture2D" uid="uid://c7ky6pya6sh3o" path="res://Lab 1, Sprite 2.png" id="2_1fjrv"]
+[ext_resource type="PackedScene" uid="uid://bpufgw3i5fph4" path="res://tree.tscn" id="3_npbet"]
+[ext_resource type="PackedScene" uid="uid://cnqe1duhtg8du" path="res://SecondNest.tscn" id="4_j5y53"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="GreyFrenchie" type="Sprite2D" parent="."]
+position = Vector2(847, 488)
+scale = Vector2(0.39, 0.424)
+texture = ExtResource("1_dfn12")
+
+[node name="BeigeFrenchie" type="Sprite2D" parent="."]
+position = Vector2(340, 498)
+texture = ExtResource("2_1fjrv")
+
+[node name="Node2D2" parent="." instance=ExtResource("3_npbet")]
+
+[node name="SecondNest" parent="." instance=ExtResource("4_j5y53")]
